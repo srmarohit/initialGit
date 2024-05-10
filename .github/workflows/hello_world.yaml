@@ -9,6 +9,8 @@ jobs:
     steps:
     - name: Check out repository
       uses: actions/checkout@v2
+      with:
+        node-version: '16.x'
 
     - name: Run Hello World script
       run: echo "Hello, World!"
